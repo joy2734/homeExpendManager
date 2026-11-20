@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-20T00:55:25.425Z",
+  "fixed": [
+    {
+      "id": "seed-0",
+      "name": "교통비",
+      "amount": 58000,
+      "group": "personal",
+      "frequency": "monthly",
+      "note": "우리카드"
+    },
+    {
+      "id": "seed-1",
+      "name": "밥값",
+      "amount": 150000,
+      "group": "personal",
+      "frequency": "monthly",
+      "note": ""
+    },
+    {
+      "id": "seed-2",
+      "name": "커피값",
+      "amount": 50000,
+      "group": "personal",
+      "frequency": "monthly",
+      "note": ""
+    },
+    {
+      "id": "seed-3",
+      "name": "보험료 (113,013 + 26,120)",
+      "amount": 139133,
+      "group": "personal",
+      "frequency": "monthly",
+      "note": ""
+    },
+    {
+      "id": "seed-4",
+      "name": "운전자보험 + 화재보험",
+      "amount": 34800,
+      "group": "personal",
+      "frequency": "monthly",
+      "note": ""
+    },
+    {
+      "id": "seed-5",
+      "name": "통신비",
+      "amount": 33000,
+      "group": "personal",
+      "frequency": "monthly",
+      "note": ""
+    },
+    {
+      "id": "seed-6",
+      "name": "청약",
+      "amount": 100000,
+      "group": "personal",
+      "frequency": "monthly",
+      "note": "저축"
+    },
+    {
+      "id": "seed-7",
+      "name": "가스비",
+      "amount": 58000,
+      "group": "personal",
+      "frequency": "monthly",
+      "note": "집고정비 가스비와 중복 여부 확인"
+    },
+    {
+      "id": "seed-8",
+      "name": "관리비",
+      "amount": 284140,
+      "group": "home",
+      "frequency": "monthly",
+      "note": ""
+    },
+    {
+      "id": "seed-9",
+      "name": "가스비",
+      "amount": 51500,
+      "group": "home",
+      "frequency": "monthly",
+      "note": ""
+    },
+    {
+      "id": "seed-10",
+      "name": "코웨이",
+      "amount": 3900,
+      "group": "home",
+      "frequency": "monthly",
+      "note": ""
+    },
+    {
+      "id": "seed-11",
+      "name": "집화재보험",
+      "amount": 21900,
+      "group": "home",
+      "frequency": "monthly",
+      "note": ""
+    },
+    {
+      "id": "seed-12",
+      "name": "대출이자",
+      "amount": 672840,
+      "group": "home",
+      "frequency": "monthly",
+      "note": "체증식: 이후 증가 가능"
+    },
+    {
+      "id": "seed-13",
+      "name": "유튜브",
+      "amount": 14900,
+      "group": "home",
+      "frequency": "monthly",
+      "note": ""
+    },
+    {
+      "id": "seed-14",
+      "name": "티빙",
+      "amount": 6300,
+      "group": "home",
+      "frequency": "monthly",
+      "note": ""
+    },
+    {
+      "id": "seed-15",
+      "name": "쿠팡",
+      "amount": 7890,
+      "group": "home",
+      "frequency": "monthly",
+      "note": ""
+    },
+    {
+      "id": "seed-16",
+      "name": "디즈니+",
+      "amount": 34750,
+      "group": "home",
+      "frequency": "yearly",
+      "note": "연간 결제, 월 환산 약 2,896원"
+    },
+    {
+      "id": "seed-17",
+      "name": "자동차보험",
+      "amount": 0,
+      "group": "other",
+      "frequency": "yearly",
+      "note": "금액 미정"
+    },
+    {
+      "id": "seed-18",
+      "name": "자동차세",
+      "amount": 400000,
+      "group": "other",
+      "frequency": "yearly",
+      "note": ""
+    },
+    {
+      "id": "seed-19",
+      "name": "재산세",
+      "amount": 100000,
+      "group": "other",
+      "frequency": "quarterly",
+      "note": ""
+    },
+    {
+      "id": "seed-20",
+      "name": "경조사 저축",
+      "amount": 100000,
+      "group": "other",
+      "frequency": "monthly",
+      "note": "매달 따로 적립"
+    }
+  ],
+  "records": [],
+  "cards": [
+    {
+      "id": "card-1",
+      "name": "신한카드",
+      "usage": "회사에서 사용 + 주유비",
+      "note": "월 70만 원까지만 사용 (사용 한도)",
+      "color": "blue"
+    },
+    {
+      "id": "card-2",
+      "name": "롯데카드",
+      "usage": "아파트 관리비 + 밖에서 쓰는 생활비",
+      "note": "",
+      "color": "orange"
+    },
+    {
+      "id": "card-3",
+      "name": "우리카드",
+      "usage": "교통비",
+      "note": "",
+      "color": "green"
+    },
+    {
+      "id": "card-4",
+      "name": "하나카드(회사)",
+      "usage": "식권 구매",
+      "note": "복지포인트 사용, 개인 현금 지출과 구분",
+      "color": "purple"
+    }
+  ]
+}
