@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>우리집 가계부 · 암호화 잠금</title>
+<title>우리집 가계부 · 간편 보안 로그인</title>
 <style>
 :root{font-family:Inter,'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;color:#17253b;background:#f5f7fb;font-synthesis:none}*{box-sizing:border-box}body{margin:0;min-height:100vh}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.45;cursor:not-allowed}.app{max-width:1380px;margin:auto;display:grid;grid-template-columns:244px minmax(0,1fr);min-height:100vh}.sidebar{padding:30px 20px;background:#fff;border-right:1px solid #e7ecf3;display:flex;flex-direction:column;gap:28px}.brand{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:800;letter-spacing:-.7px}.brand-mark{width:43px;height:43px;border-radius:15px;background:linear-gradient(135deg,#3275df,#65c1aa);display:grid;place-items:center;color:white;font-size:24px;box-shadow:0 8px 24px #3677d52b}.tiny{font-size:12px;color:#8a97a9}.nav{display:grid;gap:5px}.nav button{border:0;background:none;text-align:left;color:#6b7890;font-weight:650;padding:13px 14px;border-radius:12px;display:flex;align-items:center;gap:11px}.nav button.active{background:#eaf2ff;color:#2868c8}.nav button:hover{background:#f1f5fb}.nav .emoji{font-size:18px;width:24px;text-align:center}.side-note{margin-top:auto;background:#f0f8f4;padding:15px;border-radius:16px;color:#386d55;line-height:1.55;font-size:12px}.side-note strong{display:block;font-size:13px;margin-bottom:5px}.main{min-width:0;padding:36px clamp(18px,3.5vw,48px) 70px}.topline{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.eyebrow{font-size:12px;font-weight:750;letter-spacing:1.6px;color:#6991ba}.heading{font-size:clamp(25px,3vw,36px);letter-spacing:-1.5px;margin:6px 0 6px}.sub{color:#8995a7;font-size:14px;margin:0}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid #dce4ef;border-radius:11px;padding:11px 15px;background:#fff;color:#31445c;font-weight:700;font-size:13px;display:inline-flex;align-items:center;justify-content:center;gap:6px}.btn.primary{background:#286fdd;border-color:#286fdd;color:#fff;box-shadow:0 5px 14px #286fdd26}.btn.danger{color:#d44d58;border-color:#f2d8db}.btn:hover{filter:brightness(.97)}.section{margin-top:28px}.section-title{display:flex;align-items:center;justify-content:space-between;margin:0 0 13px;gap:8px}.section-title h2{font-size:18px;margin:0;letter-spacing:-.55px}.section-title small{color:#8794a7}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.metric{background:#fff;border:1px solid #e9edf4;border-radius:20px;padding:21px 19px;min-height:136px;box-shadow:0 7px 26px #18345308;min-width:0}.metric .top{display:flex;justify-content:space-between;gap:6px;align-items:center;color:#7d8b9f;font-size:13px;font-weight:650}.metric .symbol{border-radius:10px;background:#eaf2ff;font-size:19px;width:37px;height:37px;display:grid;place-items:center}.metric strong{font-size:clamp(20px,2.2vw,28px);letter-spacing:-1px;white-space:nowrap;display:block;margin:16px 0 5px}.metric p{font-size:11px;color:#8a96a7;margin:0;line-height:1.55}.metric.blue{background:#edf5ff;border-color:#e1efff}.metric.mint{background:#ecf8f2;border-color:#e1f1e9}.metric.peach{background:#fff4ed;border-color:#ffeadc}.metric.lavender{background:#f4f1ff;border-color:#eee9ff}.grid2{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}.panel{background:#fff;border:1px solid #e8edf4;border-radius:20px;box-shadow:0 8px 28px #18345308;overflow:hidden}.panel-pad{padding:20px}.panel-h{display:flex;align-items:center;justify-content:space-between;padding:20px 20px 13px;gap:12px}.panel-h h3{margin:0;font-size:16px}.muted{color:#8d9bad;font-size:12px}.bar-row{display:flex;align-items:center;gap:12px;margin:16px 0}.bar-label{width:92px;flex-shrink:0;font-size:13px;font-weight:700;color:#53627a}.bar-track{height:11px;border-radius:20px;background:#f0f3f8;overflow:hidden;flex:1}.bar-fill{height:100%;border-radius:20px;background:#6b9ae8}.bar-amount{width:108px;text-align:right;font-size:13px;color:#37455e;font-weight:700}.note-list{margin:4px 0 0;padding-left:19px;color:#67768c;font-size:13px;line-height:2}.table-wrap{overflow:auto}.data-table{width:100%;border-collapse:collapse;white-space:nowrap;text-align:left}.data-table th{font-size:12px;color:#8b98aa;font-weight:650;background:#f9fbfe;padding:13px 18px}.data-table td{padding:14px 18px;border-top:1px solid #f0f3f7;font-size:13px}.data-table tbody tr:hover{background:#fbfcff}.data-table .amount{text-align:right;font-variant-numeric:tabular-nums;font-weight:800;color:#263650}.data-table th.num{text-align:right}.chip{display:inline-block;font-size:11px;padding:5px 9px;border-radius:20px;background:#eff3f8;color:#65758d;font-weight:650}.chip.a{background:#eaf2ff;color:#3571c4}.chip.b{background:#fff1e9;color:#c57a49}.chip.c{background:#edf8f1;color:#4a9b70}.chip.d{background:#f3efff;color:#8b69c4}.cell-name{font-weight:750}.cell-note{font-size:11px;color:#91a0b0;margin-top:3px}.empty{padding:36px 20px;text-align:center;color:#98a5b6;font-size:13px}.row-actions{display:flex;gap:5px;justify-content:flex-end}.iconbtn{border:1px solid #e7edf4;background:#fff;border-radius:9px;padding:6px 9px;color:#61758f;font-size:12px}.iconbtn:hover{background:#edf4fc}.tabbar{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.tabbar button{border:1px solid #e3e9f2;background:white;color:#718095;border-radius:10px;padding:10px 15px;font-weight:700;font-size:13px}.tabbar button.selected{background:#286fdd;color:white;border-color:#286fdd}.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.usecard{border-radius:18px;background:white;border:1px solid #e7edf4;padding:22px;display:flex;gap:15px;align-items:flex-start}.card-icon{width:57px;height:37px;border-radius:9px;background:linear-gradient(135deg,#3a85ed,#254dba);color:white;display:grid;place-items:center;font-size:20px;box-shadow:0 7px 14px #3a85ed22;flex:none}.card-icon.orange{background:linear-gradient(135deg,#ffbd91,#dc795c)}.card-icon.green{background:linear-gradient(135deg,#6bd4ac,#269875)}.card-icon.purple{background:linear-gradient(135deg,#a99cf5,#7463be)}.usecard h3{margin:0 0 7px;font-size:16px}.usecard p{font-size:13px;color:#65758a;margin:0;line-height:1.7}.usecard small{display:block;color:#92a0ae;font-size:11px;margin-top:8px}.usecard .row-actions{margin-left:auto}.setting-card{padding:22px;border:1px solid #e5ebf3;background:#fff;border-radius:20px;margin-bottom:14px}.setting-card h3{margin:0 0 8px;font-size:17px}.setting-card p{font-size:13px;color:#74859b;line-height:1.8;margin:0 0 16px}.setting-card .actions{align-items:center}.foot{margin-top:24px;font-size:12px;color:#96a1af}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.wide{grid-column:1/-1}.field label{font-size:12px;color:#63748b;font-weight:750}.field input,.field select,.field textarea{width:100%;border:1px solid #dce4ed;background:#fff;color:#25374b;border-radius:11px;padding:12px;outline:none;min-width:0}.field input:focus,.field select:focus,.field textarea:focus{border-color:#4684dc;box-shadow:0 0 0 3px #4684dc17}.field textarea{min-height:80px;resize:vertical}.dialog{border:0;border-radius:22px;padding:0;max-width:min(540px,calc(100vw - 26px));width:100%;box-shadow:0 28px 80px #111d3b40}.dialog::backdrop{background:#101f35a3}.dialog-head{display:flex;align-items:center;justify-content:space-between;padding:24px 25px 15px}.dialog-head h2{margin:0;font-size:20px}.dialog-body{padding:4px 25px 25px}.dialog-footer{display:flex;justify-content:flex-end;gap:8px;margin-top:22px}.close{border:0;background:transparent;font-size:25px;color:#8b97a8;padding:0 4px}.toast{position:fixed;bottom:25px;right:25px;background:#223958;color:#fff;border-radius:13px;padding:13px 19px;font-size:13px;box-shadow:0 12px 34px #182b4b44;z-index:30;display:none;max-width:350px}.hint{font-size:12px;color:#8996a9;line-height:1.65}.filterrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.filterrow input,.filterrow select{border:1px solid #dee6f0;border-radius:10px;padding:10px;background:white;color:#42536a;max-width:200px}.page{display:none}.page.active{display:block}.flow{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}.right{text-align:right}.stat-line{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid #f1f3f7;font-size:13px}.stat-line:last-child{border-bottom:0}.stat-line strong{font-variant-numeric:tabular-nums}.file-status{color:#507e66;font-size:12px;margin-top:10px}.mobile-header{display:none}@media(max-width:1100px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.grid2{grid-template-columns:1fr}}@media(max-width:760px){.app{display:block}.sidebar{position:sticky;top:0;z-index:10;padding:10px 14px;gap:10px;border-right:0;border-bottom:1px solid #e5ebf3;box-shadow:0 3px 18px #1c3d6411}.brand{font-size:16px}.brand-mark{width:33px;height:33px;font-size:19px;border-radius:11px}.nav{display:flex;overflow:auto;gap:5px}.nav button{white-space:nowrap;padding:9px 11px;font-size:12px}.nav button .emoji{display:none}.side-note{display:none}.main{padding:23px 15px 50px}.metrics{gap:9px}.metric{min-height:126px;padding:15px 12px}.metric strong{font-size:21px}.card-grid{grid-template-columns:1fr}.formgrid{grid-template-columns:1fr}.topline{align-items:flex-start}.bar-label{width:66px}.bar-amount{width:100px;font-size:12px}.data-table td,.data-table th{padding:12px 10px}.dialog-head{padding:20px 20px 12px}.dialog-body{padding:4px 20px 20px}}
 
@@ -21,6 +21,11 @@ body.unlocked #lockScreen{display:none!important}
 .lock-card .btn{width:100%;margin-top:12px;min-height:43px}
 .lock-msg{font-size:12px!important;background:#f1f5fb;color:#365276!important;padding:11px 12px;border-radius:9px;min-height:42px}
 .lock-foot{font-size:11px!important;color:#8090a2!important}
+.oauth-first-setup[hidden],.oauth-change[hidden],#firstPasswordSetup[hidden]{display:none!important}
+.oauth-change{margin-top:14px;border-top:1px solid #e7edf4;padding-top:12px}
+.oauth-change summary{cursor:pointer;color:#637893;font-size:12px;font-weight:700}
+.oauth-change p,.setup-note{font-size:12px!important;color:#607b95!important;margin-bottom:8px}
+.oauth-change .btn{margin-top:8px}
 </style>
 <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
@@ -32,11 +37,19 @@ body.unlocked #lockScreen{display:none!important}
     <p>암호를 확인해 가계부 데이터를 복호화합니다. GitHub에 비밀번호나 개인 데이터는 저장하지 않습니다.</p>
     <label for="lockUser">아이디</label><input id="lockUser" type="text" autocomplete="username" value="joo" spellcheck="false" maxlength="64">
     <label for="lockPassword">비밀번호</label><input id="lockPassword" type="password" autocomplete="current-password" placeholder="비밀번호 입력" maxlength="256">
-    <label for="lockConfirm">비밀번호 확인 (처음 암호화 설정할 때만)</label><input id="lockConfirm" type="password" autocomplete="new-password" placeholder="첫 설정 시 비밀번호 다시 입력" maxlength="256">
-    <label for="lockClientId">Google OAuth 클라이언트 ID (Google 연결 시)</label><input id="lockClientId" type="text" placeholder="123456...apps.googleusercontent.com" autocomplete="off" spellcheck="false">
+    <div id="firstPasswordSetup" hidden><label for="lockConfirm">비밀번호 확인 (처음 암호화 설정할 때만)</label><input id="lockConfirm" type="password" autocomplete="new-password" placeholder="첫 설정 시 비밀번호 다시 입력" maxlength="256"></div>
+    <div id="firstOAuthSetup" class="oauth-first-setup" hidden>
+      <p class="setup-note">처음 사용하는 기기입니다. Google 연결 정보를 한 번만 등록해 주세요.</p>
+      <label for="lockClientId">Google OAuth 클라이언트 ID (최초 1회)</label><input id="lockClientId" type="text" placeholder="123456...apps.googleusercontent.com" autocomplete="off" spellcheck="false">
+    </div>
+    <details id="oauthChangePanel" class="oauth-change" hidden><summary>⚙ Google 연결 설정 변경</summary>
+      <p>Google 클라이언트 ID를 변경할 때만 사용하세요. 계정 비밀번호는 이곳에 저장되지 않습니다.</p>
+      <label for="lockClientIdChange">새 Google OAuth 클라이언트 ID</label><input id="lockClientIdChange" type="text" autocomplete="off" spellcheck="false" placeholder="123456...apps.googleusercontent.com">
+      <button class="btn" id="saveOAuthChange" type="button">설정 저장</button>
+    </details>
     <button class="btn primary" id="driveUnlockButton" type="button">☁️ Google 로그인하고 가계부 열기</button>
     <button class="btn" id="localUnlockButton" type="button">🔓 이 기기의 암호화 데이터로 열기</button>
-    <p class="lock-msg" id="lockMessage" aria-live="polite">처음 사용하는 경우 Google 로그인으로 암호화 데이터 저장소를 만듭니다. 기존 데이터는 확인 후 암호화로 전환합니다.</p>
+    <p class="lock-msg" id="lockMessage" aria-live="polite">ID와 비밀번호를 입력해 Google Drive의 가계부를 여세요. 처음 연결할 때만 Google OAuth 정보를 등록합니다.</p>
     <p class="lock-foot">Google Drive에는 AES-GCM 암호화 JSON만 저장됩니다. 비밀번호를 잊으면 기존 암호화 데이터를 복구할 수 없습니다. 백업은 꼭 보관하세요.</p>
   </div>
 </section>
@@ -49,8 +62,11 @@ body.unlocked #lockScreen{display:none!important}
 <section id="records" class="page"><div class="topline"><div><div class="eyebrow">TRANSACTION LOG</div><h1 class="heading">지출 기록</h1><p class="sub">실제 결제한 내역을 월별로 기록해요.</p></div><button class="btn primary" onclick="openForm('record')">＋ 지출 추가</button></div><div class="section filterrow"><label class="tiny" for="recordMonth">조회 월</label><input type="month" id="recordMonth"><select id="recordCategory"><option value="all">전체 분류</option><option value="personal">내 월고정비</option><option value="home">집고정비</option><option value="other">기타</option></select><button class="btn" onclick="setCurrentMonth()">이번 달</button></div><div class="section metrics" id="recordMetrics"></div><div class="section panel"><div class="panel-h"><h3>결제 내역</h3><span class="muted">로컬 자동 저장 + Google Drive 연결 시 동기화</span></div><div class="table-wrap" id="recordTable"></div></div></section>
 <section id="cards" class="page"><div class="topline"><div><div class="eyebrow">PAYMENT METHODS</div><h1 class="heading">카드 사용처</h1><p class="sub">어느 카드로 무엇을 결제할지 정해두세요.</p></div><button class="btn primary" onclick="openForm('card')">＋ 카드 추가</button></div><div class="section card-grid" id="cardGrid"></div></section>
 <section id="data" class="page"><div class="topline"><div><div class="eyebrow">YOUR DATA, YOUR CONTROL</div><h1 class="heading">데이터 · 백업 · 동기화</h1><p class="sub">GitHub에는 빈 가계부 코드만 공개합니다. 개인 자료는 로컬·비공개 Drive에만 보관합니다.</p></div></div><div class="section setting-card"><h3>① 암호화 자동 저장</h3><p>입력한 데이터는 AES-GCM으로 암호화한 후 현재 브라우저의 <strong>localStorage</strong>에 자동 저장됩니다. 인터넷 없이도 사용할 수 있지만, 방문 기록/사이트 데이터 삭제나 다른 브라우저 사용 시에는 데이터가 옮겨지지 않습니다.</p><div class="file-status" id="localStatus"></div></div><div class="setting-card"><h3>② JSON 파일 백업 · 불러오기</h3><p>일반 JSON 백업은 <strong>암호화되지 않은 평문 파일</strong>입니다. 안전한 장소에만 보관하세요. 데이터 전체(고정비·지출 기록·카드 사용처)를 JSON 파일로 내보냅니다. 파일을 다시 선택하면 해당 백업 내용으로 복원됩니다.</p><div class="actions"><button class="btn primary" onclick="exportVault()">🔐 암호화 백업 다운로드</button><button class="btn" onclick="exportData()">↧ 일반 JSON 백업 (주의)</button><button class="btn" onclick="document.getElementById('importFile').click()">↥ JSON 백업 불러오기</button></div><input type="file" id="importFile" accept=".json,application/json" hidden></div><div class="setting-card"><h3>③ 엑셀(.xlsx) 다운로드</h3><p>현재 저장된 전체 데이터를 엑셀 파일로 내보냅니다. <strong>요약 · 고정비 내역 · 지출 기록 · 카드 사용처</strong>가 각각 시트로 저장되며, 금액은 엑셀에서 계산할 수 있는 숫자 형식으로 기록됩니다. 외부 라이브러리와 인터넷 연결이 필요하지 않습니다.</p><div class="actions"><button class="btn primary" onclick="exportExcel()">📊 엑셀 파일 다운로드 (.xlsx)</button></div><p class="hint">엑셀은 확인·분석용 내보내기입니다. 수정한 내용을 다시 가져와 가계부에 반영하려면 JSON 백업·복원을 이용하세요.</p></div><div class="setting-card"><h3>④ JSON 파일에 직접 저장 (지원 브라우저)</h3><p>Chrome·Edge 등 지원 브라우저에서는 <strong>JSON 파일을 한 번 선택한 뒤, 변경 내용을 같은 파일에 저장</strong>할 수 있어요. 브라우저 보안 정책에 따라 HTTPS 또는 localhost에서만 동작할 수 있습니다. 파일로만 열었을 경우에는 위의 다운로드/불러오기 방식이 가장 안정적입니다.</p><div class="actions"><button class="btn" id="chooseFileBtn" onclick="chooseWorkingFile()">📂 작업 파일 열기</button><button class="btn" id="saveFileBtn" onclick="saveWorkingFile()">💾 작업 파일 저장</button><button class="btn" onclick="createWorkingFile()">＋ 새 작업 파일 만들기</button></div><div class="file-status" id="fileStatus">연결된 작업 파일 없음</div><p class="hint">브라우저에 자동 저장된 내용과 파일 저장 내용은 별개입니다. 파일을 열 때는 현재 내용을 덮어쓸지 확인합니다.</p></div><div class="setting-card" id="syncPanel"><h3>⑤ PC ↔ 모바일 · Google Drive 동기화</h3>
-<p>Google 계정의 <strong>AES-GCM 암호화된 비공개 JSON 파일 1개</strong>를 저장하고, PC와 모바일에서 같은 파일을 사용합니다. 첫 연결 시 기존 Drive 파일이 있으면 자동으로 찾아 불러옵니다. 별도 DB나 Worker는 없습니다. 처음에는 Google Cloud에서 <strong>웹용 OAuth 클라이언트 ID</strong>를 한 번 발급해야 합니다.</p>
-<div class="formgrid"><div class="field wide"><label for="googleClientId">Google OAuth 클라이언트 ID (처음 한 번)</label><input id="googleClientId" type="text" placeholder="123456789012-abc...apps.googleusercontent.com" autocomplete="off" spellcheck="false"></div></div>
+<p>Google 계정의 <strong>AES-GCM 암호화된 비공개 JSON 파일 1개</strong>를 저장하고, PC와 모바일에서 같은 파일을 사용합니다. 첫 연결 시 기존 Drive 파일이 있으면 자동으로 찾아 불러옵니다. 별도 DB나 Worker는 없습니다. 처음에는 Google Cloud에서 <strong>웹용 OAuth 클라이언트 ID</strong>를 한 번 발급해야 합니다. 등록 후에는 로그인 화면에서 숨겨지고, 설정에서만 수정할 수 있습니다.</p>
+<p class="hint" id="oauthSavedStatus">Google 연결 정보 확인 중…</p>
+<details id="oauthSettings" style="margin:12px 0"><summary style="font-size:13px;font-weight:700;cursor:pointer;color:#3c608e">⚙ Google OAuth 설정 확인·변경</summary>
+<div class="formgrid" style="margin-top:12px"><div class="field wide"><label for="googleClientId">Google OAuth 클라이언트 ID</label><input id="googleClientId" type="text" placeholder="123456789012-abc...apps.googleusercontent.com" autocomplete="off" spellcheck="false"></div></div>
+<button class="btn" type="button" onclick="saveOAuthFromSettings()" style="margin-top:10px">설정 저장</button></details>
 <div class="actions" style="margin:12px 0"><button class="btn primary" onclick="driveConnect()">🔑 Google 로그인 · 동기화 시작</button><button class="btn" onclick="driveSyncNow()">↻ 지금 동기화</button><button class="btn" onclick="drivePull()">↓ Drive 데이터 가져오기</button><button class="btn danger" onclick="driveForcePush()">↑ 내 데이터로 Drive 덮어쓰기</button><button class="btn" onclick="lockApp()">🔒 잠금/로그아웃</button></div>
 <div class="file-status" id="syncStatus" aria-live="polite">미연결 · 최초 1회 설정 후 Google 로그인을 눌러주세요.</div>
 <details style="margin-top:14px"><summary style="font-size:13px;font-weight:700;cursor:pointer;color:#3c608e">처음 설정 방법 보기 (3단계)</summary>
@@ -226,7 +242,7 @@ async function storeEncryptedLocal(data){
 }
 function showApp(){
  unlocked=true;el('lockPassword').value='';el('lockConfirm').value='';document.body.classList.add('unlocked');
- try{el('googleClientId').value=localStorage.getItem(DRIVE_CLIENT_KEY)||''}catch(e){}
+ refreshOAuthUI()
  render();
 }
 function clearOldPlaintext(){
@@ -257,10 +273,11 @@ async function exportVault(){
  toast('암호화 JSON을 다운로드했어요. 비밀번호를 꼭 기억하세요.');
  }catch(e){toast('백업 실패: '+e.message)}
 }
-el('driveUnlockButton').addEventListener('click',()=>{try{requireCredentials();const id=el('lockClientId').value.trim();if(id){localStorage.setItem(DRIVE_CLIENT_KEY,id)}driveConnect()}catch(e){lockMessage(e.message)}});
+el('driveUnlockButton').addEventListener('click',()=>{try{requireCredentials();const id=el('lockClientId').value.trim();if(id){saveOAuthId(id)}driveConnect()}catch(e){lockMessage(e.message)}});
+el('saveOAuthChange').addEventListener('click',()=>{try{saveOAuthId(el('lockClientIdChange').value.trim());el('oauthChangePanel').open=false;lockMessage('Google 연결 설정이 저장되었습니다. 비밀번호를 입력해 로그인하세요.')}catch(e){lockMessage('⛔ '+e.message)}});
 el('localUnlockButton').addEventListener('click',localUnlock);
 el('lockPassword').addEventListener('keydown',e=>{if(e.key==='Enter')el('driveUnlockButton').click()});
-try{el('lockClientId').value=localStorage.getItem('my-home-budget-google-client-id')||''}catch(e){}
+// OAuth client configuration is read from this browser's local settings.
 
 // === Google Drive synchronization: encrypted payload only. ===
 const DRIVE_CLIENT_KEY='my-home-budget-google-client-id';
@@ -291,10 +308,27 @@ async function driveSetState(remote){
  state=parsed;localStorage.setItem(SECURE_LOCAL_KEY,JSON.stringify(remote));cachedCipher=remote;
  clearOldPlaintext();driveMarkClean();render();
 }
+function validOAuthId(id){return /^\d+-[a-zA-Z0-9_-]+\.apps\.googleusercontent\.com$/.test(id)}
+function refreshOAuthUI(){
+ const saved=localStorage.getItem(DRIVE_CLIENT_KEY)||'';
+ el('firstOAuthSetup').hidden=!!saved;
+ el('firstPasswordSetup').hidden=!!localStorage.getItem(SECURE_LOCAL_KEY);
+ el('oauthChangePanel').hidden=!saved;
+ el('lockClientId').value=saved?'':el('lockClientId').value;
+ el('lockClientIdChange').value=saved;
+ el('googleClientId').value=saved;
+ el('oauthSavedStatus').textContent=saved?'✓ OAuth 클라이언트 ID가 이 브라우저에 저장되었습니다. 변경할 때만 설정을 열어주세요.':'Google 연결을 사용하려면 최초 1회 OAuth 클라이언트 ID를 입력하세요.';
+}
+function saveOAuthId(id){
+ if(!validOAuthId(id))throw Error('올바른 Google OAuth 클라이언트 ID를 입력하세요.');
+ localStorage.setItem(DRIVE_CLIENT_KEY,id);refreshOAuthUI();
+}
+function saveOAuthFromSettings(){
+ try{saveOAuthId(el('googleClientId').value.trim());el('oauthSettings').open=false;toast('Google 연결 정보가 저장되었습니다.')}catch(e){toast(e.message)}
+}
 function driveClientId(){
- const id=(unlocked?el('googleClientId').value:el('lockClientId').value).trim();
- if(!/^\d+-[a-zA-Z0-9_-]+\.apps\.googleusercontent\.com$/.test(id))throw Error('올바른 Google OAuth 클라이언트 ID를 입력하세요.');
- localStorage.setItem(DRIVE_CLIENT_KEY,id);
+ const id=(localStorage.getItem(DRIVE_CLIENT_KEY)||'').trim();
+ if(!validOAuthId(id))throw Error('처음 사용하는 기기에서는 Google OAuth 클라이언트 ID를 먼저 설정하세요.');
  return id;
 }
 async function driveRequest(url,opts={}){
@@ -370,7 +404,7 @@ async function driveBootstrap(){
     }
     const message=pending?'기존 가계부 데이터가 암호화되지 않은 상태로 확인되었습니다. 입력한 비밀번호로 암호화하여 Google Drive에 저장할까요? 원본 데이터는 마이그레이션 완료 후 삭제합니다.':'암호화된 가계부 데이터가 없습니다. 입력한 비밀번호로 새 암호화 저장소를 만들까요? 비밀번호를 잊으면 데이터를 복구할 수 없습니다.';
     if(!confirm(message))throw Error('설정을 취소했습니다.');
-    if(el('lockConfirm').value!==password)throw Error('최초 설정은 비밀번호 확인 칸에도 동일한 비밀번호를 입력해야 합니다.');
+    if(el('lockConfirm').value!==password){el('firstPasswordSetup').hidden=false;throw Error('새 암호화 저장소를 만들려면 비밀번호 확인 칸에도 동일한 비밀번호를 입력하고 다시 로그인하세요.');}
     if(!vaultKey)await activateKey(password,fresh(16));
     state=pending||createSeed();
     const blob=await encryptText(JSON.stringify(state));
@@ -462,8 +496,9 @@ function driveDisconnect(){
 window.addEventListener('online',()=>{if(driveConnected)driveSyncNow(false)});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&driveConnected)driveSyncNow(false)});
 setInterval(()=>{if(!document.hidden&&driveConnected)driveSyncNow(false)},60000);
-try{el('googleClientId').value=localStorage.getItem(DRIVE_CLIENT_KEY)||''}catch(e){}
+refreshOAuthUI()
 
+refreshOAuthUI();
 // App stays hidden until user unlocks a valid encrypted vault.
 </script>
 </body>
